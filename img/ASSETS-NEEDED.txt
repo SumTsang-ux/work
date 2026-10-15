@@ -1,0 +1,65 @@
+Image and artwork files were not included in the uploaded try3.zip archive.
+
+Copy the original `img/` directory into this location when available. Keep the existing paths below so the pages can load without further HTML changes. This list includes referenced images, SVG icons, favicon, and the resume PDF.
+
+Referenced paths:
+  img/favicon.png
+  img/portfolio/aeon-m01.jpg
+  img/portfolio/aeon-m02.jpg
+  img/portfolio/aeon-m03.jpg
+  img/portfolio/aeon-m04.jpg
+  img/portfolio/aeon-noshow-hero.jpg
+  img/portfolio/aeon-noshow-wf.jpg
+  img/portfolio/hat-03.jpg
+  img/portfolio/hat-04.jpg
+  img/portfolio/hat-05.jpg
+  img/portfolio/hat-06.jpg
+  img/portfolio/hat-10-tutorial.jpg
+  img/portfolio/hat-ux-01.jpg
+  img/portfolio/hat-ux-02.jpg
+  img/portfolio/hat-ux-03-color.jpg
+  img/portfolio/hat-ux-04-regist.jpg
+  img/portfolio/hat-ux-05-appoint.jpg
+  img/portfolio/hat-ux-06-consultation.jpg
+  img/portfolio/hat-ux-hero.jpg
+  img/portfolio/hat-w01.jpg
+  img/portfolio/hat-w02.jpg
+  img/portfolio/header.jpg
+  img/portfolio/md-collection.jpg
+  img/portfolio/md-hero.jpg
+  img/portfolio/md-map.jpg
+  img/portfolio/md-over.jpg
+  img/portfolio/md-sketch.jpg
+  img/portfolio/md-slider1.jpg
+  img/portfolio/md-slider2.jpg
+  img/portfolio/md-slider3.jpg
+  img/portfolio/md-slider4.jpg
+  img/portfolio/md-stage1.jpg
+  img/portfolio/md-stage2.jpg
+  img/portfolio/md-stage3.jpg
+  img/portfolio/resume_sumtsang.pdf
+  img/portfolio/root-direct-hero.jpg
+  img/portfolio/sh-01-home-guest.jpg
+  img/portfolio/sh-02-listing.jpg
+  img/portfolio/sh-03-filter.jpg
+  img/portfolio/sh-04-product-details.jpg
+  img/portfolio/sh-05-cart.jpg
+  img/portfolio/sh-06-store location.jpg
+  img/portfolio/sh-07-news.jpg
+  img/portfolio/sh-08-wf.jpg
+  img/portfolio/sh-hero.jpg
+  img/portfolio/sh-m01.jpg
+  img/portfolio/sh-m02.jpg
+  img/portfolio/ww-ecom-01.jpg
+  img/portfolio/ww-ecom-02.jpg
+  img/portfolio/ww-ecom-03.jpg
+  img/portfolio/ww-ecom-04.jpg
+  img/portfolio/ww-ecom-05.jpg
+  img/portfolio/ww-hero.jpg
+  img/portfolio/ww-wf-home-pay.jpg
+  img/svg/email.svg
+  img/svg/logo-w.svg
+  img/svg/logo.svg
+  img/svg/phone.svg
+  img/svg/resume2.svg
+  img/svg/to-top.svg
