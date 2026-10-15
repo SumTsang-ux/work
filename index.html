@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sum Tsang — Product Designer</title>
+  <meta name="description" content="Selected product design work by Sum Tsang, Senior UX/UI and Product Designer with 15 years of experience across mobile, web, enterprise UX/UI, and AI-assisted prototyping.">
+  <meta name="author" content="Sum Tsang">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f7f4;
+      --paper: #fff;
+      --ink: #191b19;
+      --muted: #626761;
+      --line: #dedfd8;
+      --accent: #b9f36b;
+      --radius: 18px;
+      --page: 1280px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: "DM Sans", sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    a:focus-visible { outline: 3px solid #4b7f18; outline-offset: 4px; }
+    .shell { width: min(var(--page), calc(100% - 64px)); margin-inline: auto; }
+    .topbar { height: 84px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+    .wordmark { font-family: Manrope, sans-serif; font-size: 20px; font-weight: 800; letter-spacing: -.06em; }
+    .wordmark span { color: #777c72; font-weight: 500; }
+    .nav { display: flex; gap: 30px; align-items: center; font-size: 16px; font-weight: 600; }
+    .nav a { transition: opacity .2s ease; }
+    .nav a:hover { opacity: .6; }
+    .nav .contact { background: var(--ink); color: white; padding: 12px 18px; border-radius: 999px; }
+    .intro { padding: 66px 0 50px; }
+    .kicker { margin: 0 0 20px; text-transform: uppercase; letter-spacing: .13em; font-size: 15px; font-weight: 700; color: var(--muted); }
+    h1 { max-width: 850px; margin: 0; font-family: Manrope, sans-serif; font-size: clamp(42px, 6.4vw, 82px); line-height: .99; letter-spacing: -.075em; font-weight: 700; }
+    h1 em { font-style: normal; color: #777d70; }
+    .intro-bottom { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-top: 30px; }
+    .intro-bottom p { max-width: 610px; margin: 0; color: var(--muted); font-size: 18px; line-height: 1.65; }
+    .scroll-cue { flex: 0 0 auto; font-size: 15px; font-weight: 700; }
+    .work-head { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-top: 1px solid var(--line); }
+    .work-head h2 { margin: 0; font-size: 15px; text-transform: uppercase; letter-spacing: .13em; }
+    .work-head span { color: var(--muted); font-size: 15px; }
+    .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 44px 24px; }
+    .project { min-width: 0; }
+    .cover { display: block; position: relative; overflow: hidden; aspect-ratio: 1.48; border-radius: var(--radius); background: #e8eae2; }
+    .cover img { width: 100%; height: 100%; display: block; object-fit: cover; transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+    .project:hover .cover img { transform: scale(1.025); }
+    .cover.root-cover { background: #e7f0df; }
+    .root-cover img { object-position: center; }
+    .image-fallback { display: none; width: 100%; height: 100%; align-items: center; justify-content: center; flex-direction: column; gap: 12px; color: #2e3c26; background: radial-gradient(circle at 75% 20%, #d6f6b3, transparent 34%), linear-gradient(135deg, #edf3e6, #c9e7a7); }
+    .image-fallback strong { font: 800 clamp(24px, 3vw, 44px)/1 Manrope, sans-serif; letter-spacing: -.06em; }
+    .image-fallback span { font-size: 15px; letter-spacing: .12em; text-transform: uppercase; }
+    .root-cover img:not([src]), .root-cover img[src=""] { display: none; }
+    .project-title-row { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-top: 18px; }
+    .project-title-row h3 { margin: 0; font-family: Manrope, sans-serif; font-size: clamp(22px, 2.5vw, 30px); line-height: 1.2; letter-spacing: -.045em; font-weight: 700; }
+    .arrow { flex: 0 0 auto; font-size: 22px; transition: transform .2s ease; }
+    .project:hover .arrow { transform: translate(3px, -3px); }
+    .project-subtitle { margin: 9px 0 0; color: var(--muted); font-size: 16px; line-height: 1.5; }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .project-tags span { border: 1px solid #d7d9d1; border-radius: 999px; padding: 6px 11px; font-size: 15px; color: #454a43; }
+    .about { margin-top: 100px; padding: 40px 0 54px; border-top: 1px solid var(--line); display: grid; grid-template-columns: .8fr 1.2fr; gap: 50px; }
+    .about-label { margin: 0; color: var(--muted); font-size: 15px; letter-spacing: .13em; text-transform: uppercase; font-weight: 700; }
+    .about h2 { margin: 0 0 18px; font: 700 clamp(30px, 4vw, 48px)/1.08 Manrope, sans-serif; letter-spacing: -.06em; }
+    .about p { margin: 0 0 15px; color: var(--muted); font-size: 18px; line-height: 1.7; }
+    .about .focus { display: inline-block; background: var(--accent); color: var(--ink); border-radius: 999px; padding: 8px 13px; margin-top: 4px; font-size: 15px; font-weight: 700; }
+    footer { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); padding: 24px 0 32px; color: var(--muted); font-size: 15px; }
+    footer a { color: var(--ink); font-weight: 700; }
+    @media (max-width: 760px) {
+      .shell { width: min(100% - 36px, var(--page)); }
+      .topbar { height: 72px; }
+      .wordmark { font-size: 18px; }
+      .nav { gap: 16px; font-size: 15px; }
+      .nav .contact { padding: 10px 13px; }
+      .intro { padding: 50px 0 36px; }
+      .intro-bottom { align-items: start; flex-direction: column; gap: 18px; }
+      .intro-bottom p, .about p { font-size: 17px; }
+      .project-grid { grid-template-columns: 1fr; gap: 34px; }
+      .cover { aspect-ratio: 1.25; }
+      .project-title-row h3 { font-size: 25px; }
+      .about { margin-top: 70px; grid-template-columns: 1fr; gap: 18px; }
+      footer { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="shell topbar">
+    <a class="wordmark" href="index.html" aria-label="Sum Tsang home">SUM TSANG<span> / DESIGN</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#work">WORK</a>
+      <a class="contact" href="contact.html">Contact ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="shell intro">
+      <p class="kicker">Senior UX/UI · Product Designer</p>
+      <h1>Digital products,<br><em>made clear.</em></h1>
+      <div class="intro-bottom">
+        <p>I design useful, intuitive digital experiences across mobile, web, and complex product systems — connecting user needs with clear interfaces and thoughtful interaction.</p>
+        <a class="scroll-cue" href="#work">Explore selected work ↓</a>
+      </div>
+    </section>
+
+    <section class="shell" id="work" aria-labelledby="work-heading">
+      <div class="work-head">
+        <h2 id="work-heading">Selected work</h2>
+        <span>01 — 04</span>
+      </div>
+
+      <div class="project-grid">
+        <article class="project">
+          <a class="cover root-cover" href="https://rootdirect-hk.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Root Direct prototype">
+            <img src="img/portfolio/root-direct-hero.jpg" alt="Root Direct product prototype preview" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-fallback"><strong>ROOT DIRECT</strong><span>AI-assisted product prototype</span></div>
+          </a>
+          <div class="project-title-row">
+            <h3><a href="https://rootdirect-hk.onrender.com/" target="_blank" rel="noopener noreferrer">Root Direct</a></h3>
+            <a class="arrow" href="https://rootdirect-hk.onrender.com/" target="_blank" rel="noopener noreferrer" aria-label="Open Root Direct">↗</a>
+          </div>
+          <p class="project-subtitle">AI-assisted product prototype</p>
+          <div class="project-tags"><span>Product UX</span><span>UI Design</span><span>AI Prototyping</span></div>
+        </article>
+
+        <article class="project">
+          <a class="cover" href="ha-uxui.html" aria-label="View Hospital Authority CMS UX/UI project">
+            <img src="img/portfolio/hat-ux-hero.jpg" alt="Hospital Authority CMS UX/UI project preview" loading="lazy">
+          </a>
+          <div class="project-title-row">
+            <h3><a href="ha-uxui.html">Hospital Authority — CMS UX/UI</a></h3>
+            <a class="arrow" href="ha-uxui.html" aria-label="View Hospital Authority project">↗</a>
+          </div>
+          <p class="project-subtitle">Enterprise healthcare content management experience</p>
+          <div class="project-tags"><span>Enterprise UX</span><span>UI Design</span><span>Prototyping</span></div>
+        </article>
+
+        <article class="project">
+          <a class="cover" href="ww.html" aria-label="View Watsons Water e-shop revamp project">
+            <img src="img/portfolio/ww-hero.jpg" alt="Watsons Water e-shop revamp project preview" loading="lazy">
+          </a>
+          <div class="project-title-row">
+            <h3><a href="ww.html">Watsons Water — E-shop Revamp</a></h3>
+            <a class="arrow" href="ww.html" aria-label="View Watsons Water project">↗</a>
+          </div>
+          <p class="project-subtitle">A clearer, more convenient e-commerce journey</p>
+          <div class="project-tags"><span>E-commerce</span><span>UX · UI</span><span>Responsive Web</span></div>
+        </article>
+
+        <article class="project">
+          <a class="cover" href="mudull.html" aria-label="View Run Mudull Run interactive game project">
+            <img src="img/portfolio/md-hero.jpg" alt="Run Mudull Run interactive game project preview" loading="lazy">
+          </a>
+          <div class="project-title-row">
+            <h3><a href="mudull.html">Run Mudull Run</a></h3>
+            <a class="arrow" href="mudull.html" aria-label="View Run Mudull Run project">↗</a>
+          </div>
+          <p class="project-subtitle">An expressive, playful interactive game</p>
+          <div class="project-tags"><span>Interactive Product</span><span>Game UI</span><span>Illustration</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="shell about" aria-labelledby="about-heading">
+      <p class="about-label">A little about me</p>
+      <div>
+        <h2 id="about-heading">Senior UX/UI · Product Designer</h2>
+        <p>With 15 years of experience in digital design, I create user-centered interfaces and responsive web and mobile experiences, from early concepts through interactive prototypes.</p>
+        <p>Recently, I’ve been expanding into AI-assisted design and rapid prototyping, using tools such as Figma Make and AI-assisted coding to turn ideas into functional web prototypes.</p>
+        <p>My current focus is bringing product thinking, visual craft, and hands-on web workflows together to make ideas tangible and testable.</p>
+        <span class="focus">Currently exploring AI-assisted product prototyping</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <span>© <span id="year">2026</span> Sum Tsang · Senior UX/UI / Product Designer</span>
+    <a href="contact.html">Let’s talk ↗</a>
+  </footer>
+</body>
+</html>
